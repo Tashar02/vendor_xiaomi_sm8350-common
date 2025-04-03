@@ -6,6 +6,10 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/xiaomi/sm8350-common
 
 PRODUCT_COPY_FILES += \
+    vendor/xiaomi/sm8350-common/proprietary/odm/etc/dolby/multimedia_dolby_dax_default.xml:$(TARGET_COPY_OUT_ODM)/etc/dolby/multimedia_dolby_dax_default.xml \
+    vendor/xiaomi/sm8350-common/proprietary/odm/etc/init/vendor.dolby.media.c2@1.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.dolby.media.c2@1.0-service.rc \
+    vendor/xiaomi/sm8350-common/proprietary/odm/etc/init/vendor.dolby_sp.hardware.dmssp@2.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.dolby_sp.hardware.dmssp@2.0-service.rc \
+    vendor/xiaomi/sm8350-common/proprietary/odm/etc/init/vendor.dolby_v3_6.hardware.dms360@2.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.dolby_v3_6.hardware.dms360@2.0-service.rc \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/etc/dpm/dpm.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/dpm/dpm.conf \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/etc/init/dpmd.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/dpmd.rc \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/etc/init/wfdservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/wfdservice.rc \
@@ -532,6 +536,27 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.wifidisplaysession@1.0 \
     vendor.qti.imsrtpservice@3.0 \
     vendor.qti.imsrtpservice@3.1 \
+    libdapparamstorage_v3_6 \
+    libdeccfg_v3_6 \
+    libdlbdsservice_v3_6 \
+    vendor.dolby_v3_6.hardware.dms360@2.0 \
+    libstagefright_soft_ddpdec \
+    libhwdap_v3_6 \
+    libswdap_v3_6 \
+    libcodec2_hidl@1.0_sp \
+    libcodec2_hidl_plugin_sp \
+    libcodec2_soft_ac4dec_sp \
+    libcodec2_soft_common_sp \
+    libcodec2_soft_ddpdec_sp \
+    libcodec2_store_dolby_sp \
+    libcodec2_vndk_sp \
+    libdapparamstorage_sp \
+    libdeccfg_sp \
+    libdlbdsservice_sp \
+    libui_sp \
+    vendor.dolby_sp.hardware.dmssp@2.0-impl \
+    vendor.dolby_sp.hardware.dmssp@2.0 \
+    vendor.dolby_v3_6.hardware.dms360@2.0-impl \
     CACertService \
     CneApp \
     IWlanService \
@@ -558,6 +583,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.diag.hal.service.xml \
     vendor.qti.gnss@4.0-service.xml \
     vendor.xiaomi.hardware.citsensorservice@1.1-service.xml \
+    manifest_dax_dolby_v3_6.xml \
+    vendor.dolby.hardware.dms.xml \
     adpl \
     adsprpcd \
     cdsprpcd \
@@ -616,7 +643,10 @@ PRODUCT_PACKAGES += \
     wifidisplayhalservice \
     xtra-daemon \
     dpmd \
-    wfdservice64
+    wfdservice64 \
+    vendor.dolby_sp.hardware.dmssp@2.0-service \
+    vendor.dolby_sp.media.c2@1.0-service \
+    vendor.dolby_v3_6.hardware.dms360@2.0-service
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
