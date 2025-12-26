@@ -322,6 +322,7 @@ PRODUCT_PACKAGES += \
     libmdsprpc \
     libminkdescriptor \
     libminksocket \
+    libmisight \
     libmlipay \
     libmlipay@1.1 \
     libmodemapi \
