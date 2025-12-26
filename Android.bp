@@ -6689,6 +6689,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libmisight.so",
             ],
             shared_libs: [
+                "libmisightjson_shim",
                 "libjsoncpp_shim",
                 "liblog",
                 "libcutils",
